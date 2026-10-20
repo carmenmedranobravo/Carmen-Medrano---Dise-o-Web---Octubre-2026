@@ -1,0 +1,10 @@
+section{
+    background-color: black;
+    padding: 5px;
+}
+
+div{
+    background-color: rgb(194, 225, 252);
+    min-height: 50px;
+    margin: 30px;
+}
