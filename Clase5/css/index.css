@@ -1,10 +1,19 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 section{
     background-color: black;
-    padding: 5px;
+    padding: 20px;
 }
 
 div{
+    display: inline-block;
     background-color: rgb(194, 225, 252);
-    min-height: 50px;
-    margin: 30px;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    margin: 10px;
 }
