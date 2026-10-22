@@ -7,7 +7,7 @@
 img{
     width: 100%;
 }
-/*A*/
+/*----------------- A --------------*/
 .a{
     padding: 48px 0;
     background-color: #FBFBFB;
@@ -35,33 +35,32 @@ img{
     padding: 16px;
 }
 
-/*A*/
-.b{
+/*----------------- B --------------*/
+.b{ 
     padding: 48px 0;
     background-color: #FBFBFB;
 }
+
 .b__block{
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     padding: 16px;
-    gap: 48px;
+    gap: 16px;
     align-items: center;
     max-width: 920px;
     margin: 0 auto;
 }
+
 .b__card{
     display: flex;
     flex-direction: column;
     background-color: white;
     padding: 16px;
     gap: 16px;
+    flex: 1 1 250px;
 }
 
-.b__content{
-    flex: 1 1 100px;
-    display: flex;
-    flex-direction: column;
-}
 
 
 
