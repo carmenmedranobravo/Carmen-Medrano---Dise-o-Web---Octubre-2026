@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(255, 246, 230);
+}
+
+h1{
+    color:rgb(4, 150, 150);
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:bolder;
+    background-color: aliceblue;
+}
+
+.azul{
+    color: blue;
+}
+.verde{
+    color: green;
+}
+.rojo{
+    color: red;
+}
+.naranja{
+    color:orange;
+}
+
+img{
+    border-radius: 200px;
+    width: 200px;
+}
+
+ul{
+    background-color:ivory;
+}
+
+ol{
+    background-color: honeydew;
+}
+
+dl{
+    background-color: rgb(255, 226, 230);
+    color:seagreen;
+}
+section {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+}
+
+/* Texto al lado de la imagen */
+.contenedor {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Para que la imagen no sea gigante */
+.contenedor img {
+  max-width: 400px; 
+  height: auto;
+}
