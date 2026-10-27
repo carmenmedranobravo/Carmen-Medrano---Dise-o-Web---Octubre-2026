@@ -252,7 +252,7 @@ a {
     align-self: center;
 }
 
-/*----------------- F --------------*/
+/*----------------- G --------------*/
 .g {
     padding: 48px 0;
     background-color: #FBFBFB;
@@ -265,28 +265,39 @@ a {
     padding: 16px;
     max-width: 920px;
     margin: 0 auto;
-    align-items: start;
 }
 
 .g__cards {
     display: flex;
-    flex-wrap: wrap;
-    padding: 16px 0;
+    flex-direction: row;
     gap: 16px;
-    align-items: center;
 }
-
-.g_card {
+.g__card {
     display: flex;
-    flex-direction: column;
-    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
     gap: 16px;
-    flex: 1 1 330px;
-    background-color: white;
-
 }
 
 .g__content {
-    flex: 1 1 400px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    background-color: #F0F0F0;
 }
+
+.g__content img {
+    width: 20px;
+    height: 20px;
+}
+
+.g__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
 
