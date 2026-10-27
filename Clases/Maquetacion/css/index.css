@@ -333,6 +333,10 @@ a {
     height: 112px;
 }
 
+.h__left .h__content{
+    padding: 24px;
+}
+
 .h__right {
     flex: 1;
     display: flex;
@@ -347,6 +351,7 @@ a {
     justify-content: space-between;
     align-items: center;
     gap: 16px;
+    padding: 24px;
     background-color: #F0F0F0;
 }
 
@@ -359,7 +364,6 @@ a {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding: 24px;
 }
 
 .h__footer {
