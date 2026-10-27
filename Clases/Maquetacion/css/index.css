@@ -273,13 +273,6 @@ a {
     gap: 16px;
 }
 .g__card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-}
-
-.g__content {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -287,12 +280,17 @@ a {
     padding: 24px;
     background-color: #F0F0F0;
 }
-
-.g__content img {
+.g__card img {
     width: 20px;
     height: 20px;
 }
 
+.g__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
 .g__footer {
     display: flex;
     justify-content: space-between;
@@ -300,4 +298,71 @@ a {
     gap: 16px;
 }
 
+/*----------------- H --------------*/
+.h {
+    padding: 48px 0;
+    background-color: #FBFBFB;
+}
 
+.h__block {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 16px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.h__cards {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.h__left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #F0F0F0;
+}
+
+.h__left img {
+    width: 100%;
+    height: 112px;
+}
+
+.h__right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.h__item {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    background-color: #F0F0F0;
+}
+
+.h__item img {
+    width: 20px;
+    height: 20px;
+}
+
+.h__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+}
+
+.h__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
