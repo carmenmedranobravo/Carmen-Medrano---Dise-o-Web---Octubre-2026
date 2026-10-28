@@ -92,28 +92,42 @@ p{
     display: inline-flex;
     align-items: center;
 }
-
-/* - - - - - - - Header - - - - - - - */
-.header{
-    display: flex;
-    padding: var(--space-s);
-    background-color: var(--color-bg);
-}
-.header_block{
-    display: flex;
-    justify-content: space-between;
-
+.block{
     max-width: 1040px;
     margin: 0 auto;
 }
+
+/* - - - - - - - Header - - - - - - - */
+header{
+    padding: var(--space-s);
+    background-color: var(--color-bg);
+}
+
+.header_block{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
 .header_logo{
     max-width: 75px;
-
 }
 
-.header_nav{
-
-}
 .header_menu{
+    display: flex;
+    list-style: none;
+    gap: var(--space-l);
+    align-items: center;
+}
+/* - - - - - - - Hero - - - - - - - */
+
+.hero{
+    padding: var(--space-xl);
+}
+
+.header_block{
 
 }
+
+.hero_content{}
