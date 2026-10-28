@@ -308,7 +308,7 @@ a {
 .h__block {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 16px;
     padding: 16px;
     max-width: 920px;
     margin: 0 auto;
@@ -348,7 +348,6 @@ a {
     flex: 1;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     gap: 16px;
     padding: 24px;
@@ -363,7 +362,7 @@ a {
 .h__content {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
 }
 
 .h__footer {
