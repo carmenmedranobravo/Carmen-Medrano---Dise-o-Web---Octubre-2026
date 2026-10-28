@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    /*Colores*/
+    --color-letra: #606060;
+    --color-fondo: #F0F0F0;
+    --color-bg: #FBFBFB;
+
+    /*Space*/
+    --space-xxs: 8px;
+    --space-xs: 16px;
+    --space-s: 24px;
+    --space-m: 32px;
+    --space-l: 48px;
+    --space-xl: 64px;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -17,64 +32,88 @@ a {
 }
 
 /* - - - - - - - Componentes - - - - - - - */
-h1{
+h1, h2, h3, p, .eyebrow, .small, .btn, .menu-link, .link{
     font-family: "Roboto", sans-serif;
+}
+
+h1{
     font-size: 56px;
     font-weight: 500;
 }
 
 h2{
-    font-family: "Roboto", sans-serif;
     font-size: 32px;
     font-weight: 500;
 }
 
 h3{
-    font-family: "Roboto", sans-serif;
     font-size: 19px;
     font-weight: 500;
 }
 
 p{
-    font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: 400;
 }
 
 .big{
     font-size: 18px;
-    color: #606060;
+    color: var(----color-letra);
 }
 
 .eyebrow{
-    font-family: "Roboto", sans-serif;
     font-size: 13px;
-    color: #606060;
+    color: var(----color-letra);
     text-transform: uppercase;
 }
+
 .small{
-    font-family: "Roboto", sans-serif;
     font-size: 15px;
-    color: #606060;
+    color: var(----color-letra);
 }
+
 .btn{
     background-color: black;
     color: white;
     padding: 16px 32px;
     border-radius: 73px;
-
-    font-family: "Roboto", sans-serif;
     font-size: 15px;
-
     display: inline-block;
 }
+
 .menu-link{
     font-size: 15px;
-    font-family: "Roboto", sans-serif;
 }
 
 .link{
-    font-family: "Roboto", sans-serif;
     font-size: 15px;
+    font-weight: 500;
+    gap: var(--space-xxs);
     display: inline-flex;
+    align-items: center;
+}
+
+/* - - - - - - - Header - - - - - - - */
+.header{
+    display: flex;
+    padding: var(--space-s);
+    background-color: var(--color-bg);
+}
+.header_block{
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 1040px;
+    margin: 0 auto;
+}
+.header_logo{
+    max-width: 75px;
+
+}
+
+.header_nav{
+
+}
+.header_menu{
+
 }
