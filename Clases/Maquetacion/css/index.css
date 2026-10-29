@@ -78,7 +78,6 @@ a {
 
 .c__block {
     display: flex;
-    flex-direction: column;
     padding: 16px;
     gap: 32px;
     max-width: 920px;
