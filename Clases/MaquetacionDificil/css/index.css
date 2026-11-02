@@ -381,6 +381,7 @@ header {
 /* - - - - - - - Contacto - - - - - - - */
 .contact {
     padding: var(--space-s);
+    gap: var(--space-l);
 }
 
 .contact__block {
@@ -419,6 +420,7 @@ header {
 
 footer {
     padding: var(--space-s);
+    gap: var(--space-l);
 }
 
 .footer__block {
