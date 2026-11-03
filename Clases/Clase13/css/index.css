@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.grid{
+    font-family: "Roboto", sans-serif;
+    background-color: goldenrod;
+    padding: 10px;
+
+    display: grid;
+    gap: 5px;
+}
+
+.grid__elem{
+      background-color: aquamarine;
+}
