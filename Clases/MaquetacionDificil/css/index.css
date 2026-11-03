@@ -505,9 +505,7 @@ footer {
     display: flex;
     list-style: none;
     gap: var(--space-l);
-    align-items: center;
     flex-wrap: wrap;
-    flex: 1 1 150px;
 }
 
 .footer__footer {
@@ -525,4 +523,14 @@ footer {
     display: flex;
     flex-direction: row;
     gap: var(--space-l);
+}
+
+.footer__card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;                  
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-s);      
+    width: 100%;
 }
