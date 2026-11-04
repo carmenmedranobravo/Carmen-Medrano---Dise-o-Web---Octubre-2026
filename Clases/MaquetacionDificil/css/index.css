@@ -310,6 +310,7 @@ header {
 }
 
 /* - - - - - - - Works - - - - - - - */
+/* - - - - - - -
 
 .work {
     display: flex;
@@ -382,6 +383,7 @@ header {
     gap: var(--space-xxs);
     flex: 1;
 }
+    - - - - - - - */
 
 /* - - - - - - - Work con grid - - - - - - - */
 
