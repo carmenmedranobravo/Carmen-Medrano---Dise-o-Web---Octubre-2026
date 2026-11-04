@@ -1,0 +1,258 @@
+<!DOCTYPE html><html class="light" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Ficha de producto | rhode wireframe</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Inter Font -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config based on Design Tokens -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary-container": "#a3adc0",
+            "on-surface-variant": "#44474c",
+            "on-tertiary": "#ffffff",
+            "inverse-primary": "#bdc7db",
+            "secondary-fixed": "#dce3f0",
+            "primary": "#212b3a",
+            "primary-fixed": "#d9e3f7",
+            "secondary": "#585f6a",
+            "on-surface": "#191c1e",
+            "surface-container": "#edeef0",
+            "on-secondary-fixed": "#151c25",
+            "on-primary": "#ffffff",
+            "on-secondary-fixed-variant": "#404752",
+            "surface-bright": "#f8f9fb",
+            "tertiary-fixed-dim": "#c4c7ca",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed": "#191c1f",
+            "tertiary-fixed": "#e0e2e6",
+            "on-tertiary-fixed-variant": "#44474a",
+            "on-background": "#191c1e",
+            "primary-container": "#374151",
+            "surface-dim": "#d9dadc",
+            "error-container": "#ffdad6",
+            "surface-container-low": "#f3f4f6",
+            "primary-fixed-dim": "#bdc7db",
+            "background": "#f8f9fb",
+            "secondary-fixed-dim": "#c0c7d3",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-container": "#5e6570",
+            "secondary-container": "#dce3f0",
+            "inverse-surface": "#2e3132",
+            "outline": "#75777d",
+            "outline-variant": "#c5c6cc",
+            "inverse-on-surface": "#f0f1f3",
+            "tertiary-container": "#3e4144",
+            "on-error-container": "#93000a",
+            "on-tertiary-container": "#aaadb1",
+            "surface-tint": "#555f70",
+            "surface-container-high": "#e7e8ea",
+            "error": "#ba1a1a",
+            "surface": "#f8f9fb",
+            "tertiary": "#282b2e",
+            "surface-variant": "#e1e2e4",
+            "on-primary-fixed-variant": "#3d4757",
+            "on-primary-fixed": "#121c2a",
+            "on-secondary": "#ffffff",
+            "surface-container-highest": "#e1e2e4"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-xl": "2.5rem",
+            "gutter": "1.5rem",
+            "margin-mobile": "1rem",
+            "margin": "3rem",
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "gutter-mobile": "0.75rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "headline-sm": ["Inter"],
+            "headline-lg-mobile": ["Inter"],
+            "body-lg": ["Inter"],
+            "headline-lg": ["Inter"],
+            "display": ["Inter"],
+            "label-sm": ["Inter"],
+            "body-sm": ["Inter"],
+            "label-md": ["Inter"],
+            "body-md": ["Inter"],
+            "headline-md": ["Inter"],
+            "display-mobile": ["Inter"]
+          },
+          "fontSize": {
+            "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "500" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "400" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "fontWeight": "400" }],
+            "display": ["48px", { "lineHeight": "56px", "fontWeight": "400" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+            "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+            "display-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    /* Hairline diagonal crossing wireframe placeholder */
+    .wireframe-box {
+      position: relative;
+      background-color: #f3f4f6;
+      border: 1px solid #d1d5db;
+      overflow: hidden;
+    }
+    .wireframe-box::before,
+    .wireframe-box::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    .wireframe-box::before {
+      background: linear-gradient(to top right, transparent calc(50% - 0.5px), #d1d5db calc(50% - 0.5px), #d1d5db calc(50% + 0.5px), transparent calc(50% + 0.5px));
+    }
+    .wireframe-box::after {
+      background: linear-gradient(to bottom right, transparent calc(50% - 0.5px), #d1d5db calc(50% - 0.5px), #d1d5db calc(50% + 0.5px), transparent calc(50% + 0.5px));
+    }
+    .wireframe-box-clean {
+      position: relative;
+      background-color: #f3f4f6;
+      border: 1px solid #d1d5db;
+    }
+    /* Simulated Text Bars */
+    .text-skeleton {
+      background-color: #e5e7eb;
+      border-radius: 2px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body class="bg-[#f8f9fb] text-on-surface antialiased min-h-screen flex flex-col justify-start p-4 sm:p-6 lg:p-8 font-body-md text-body-md selection:bg-surface-container selection:text-primary"><div class="w-full max-w-[1400px] mx-auto bg-white rounded-2xl border border-gray-200/90 shadow-md overflow-hidden flex flex-col" id="page-shell-container">
+<!-- Announcement Bar -->
+<aside class="w-full bg-[#f1f3f5] border-b border-gray-200/80 py-2.5 px-4 sm:px-8 flex items-center justify-center">
+  <div class="h-2 w-32 bg-gray-400/80 rounded-full"></div>
+</aside>
+<!-- Top Header Navigation -->
+<header class="w-full border-b border-gray-200/80 px-4 sm:px-8 max-w-full flex items-center justify-between h-16 bg-white sticky top-0 z-50">
+  <!-- Nav items left with indicator and pills -->
+  <div class="flex items-center gap-5 sm:gap-6">
+    <div class="h-5 w-8 border border-gray-300 rounded bg-gray-50 hidden sm:block"></div>
+    <div class="flex items-center gap-4 sm:gap-5">
+      <div class="h-2.5 w-14 bg-gray-800 rounded-full"></div>
+      <div class="h-2.5 w-14 bg-gray-300 rounded-full hidden md:block"></div>
+      <div class="h-2.5 w-16 bg-gray-300 rounded-full hidden md:block"></div>
+      <div class="h-2.5 w-14 bg-gray-300 rounded-full hidden lg:block"></div>
+    </div>
+  </div>
+  <!-- Center Logo / Brand dark pill representation -->
+  <div class="flex items-center justify-center">
+    <div class="px-5 py-1.5 rounded-full bg-gray-800 flex items-center gap-2 shadow-xs">
+      <span class="w-2 h-2 rounded-full bg-white inline-block"></span>
+      <div class="h-2.5 w-16 bg-white/90 rounded-full"></div>
+    </div>
+  </div>
+  <!-- Action icons right -->
+  <div class="flex items-center gap-3 sm:gap-4 text-gray-700">
+    <button aria-label="Search" class="p-1.5 hover:text-gray-900 transition-colors flex items-center justify-center">
+      <span class="material-symbols-outlined text-[20px]">search</span>
+    </button>
+    <button aria-label="Account" class="p-1.5 hover:text-gray-900 transition-colors flex items-center justify-center">
+      <span class="material-symbols-outlined text-[20px]">person</span>
+    </button>
+    <button aria-label="Shopping bag" class="p-1.5 hover:text-gray-900 transition-colors flex items-center justify-center relative">
+      <span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+      <span class="absolute top-0.5 -right-0.5 w-3.5 h-3.5 bg-gray-800 text-white text-[9px] flex items-center justify-center rounded-full font-medium">0</span>
+    </button>
+  </div>
+</header>
+<!-- Main Content Area -->
+<main class="w-full px-4 md:px-10 py-8 flex-1 bg-white">
+<!-- Breadcrumbs -->
+<nav aria-label="Breadcrumb" class="flex items-center space-x-2 text-xs font-mono text-secondary mb-8 select-none"><div class="h-2 w-10 bg-gray-300 rounded-full"></div><span class="text-outline-variant">/</span><div class="h-2 w-14 bg-gray-300 rounded-full"></div><span class="text-outline-variant">/</span><div class="h-2 w-12 bg-gray-300 rounded-full"></div><span class="text-outline-variant">/</span><div class="h-2 w-24 bg-gray-800 rounded-full"></div></nav>
+<!-- 2-Column Split: PDP Gallery & Buy Box -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+<!-- LEFT COLUMN: Image Gallery -->
+<section aria-label="Galería visual" class="lg:col-span-7 flex flex-col space-y-4">
+<!-- Main 1:1 Clean Wireframe Hero -->
+<div class="relative w-full aspect-square bg-[#f5f6f8] rounded-xl border border-gray-200/90 overflow-hidden flex items-center justify-center group"><svg class="absolute inset-0 w-full h-full stroke-gray-200 pointer-events-none" stroke-width="1"><line x1="0" x2="100%" y1="0" y2="100%"></line><line x1="100" x2="0" y1="0" y2="100%"></line></svg><div class="relative z-10 w-12 h-12 rounded-full border border-gray-200 bg-white/90 flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-secondary text-[20px]">image</span></div></div>
+<!-- Thumbnails Multi-angle 4-Grid Strip -->
+<div class="grid grid-cols-4 gap-3 md:gap-4"><button aria-label="Vista 1" class="aspect-square bg-[#f5f6f8] rounded-lg border-2 border-primary relative flex items-center justify-center overflow-hidden transition-all"><svg class="absolute inset-0 w-full h-full stroke-gray-200" stroke-width="1"><line x1="0" x2="100%" y1="0" y2="100%"></line><line x1="100" x2="0" y1="0" y2="100%"></line></svg></button><button aria-label="Vista 2" class="aspect-square bg-[#f5f6f8] rounded-lg border border-gray-200 hover:border-gray-400 opacity-80 hover:opacity-100 relative flex items-center justify-center overflow-hidden transition-all"><svg class="absolute inset-0 w-full h-full stroke-gray-200" stroke-width="1"><line x1="0" x2="100%" y1="0" y2="100%"></line><line x1="100" x2="0" y1="0" y2="100%"></line></svg></button><button aria-label="Vista 3" class="aspect-square bg-[#f5f6f8] rounded-lg border border-gray-200 hover:border-gray-400 opacity-80 hover:opacity-100 relative flex items-center justify-center overflow-hidden transition-all"><svg class="absolute inset-0 w-full h-full stroke-gray-200" stroke-width="1"><line x1="0" x2="100%" y1="0" y2="100%"></line><line x1="100" x2="0" y1="0" y2="100%"></line></svg></button><button aria-label="Vista 4" class="aspect-square bg-[#f5f6f8] rounded-lg border border-gray-200 hover:border-gray-400 opacity-80 hover:opacity-100 relative flex items-center justify-center overflow-hidden transition-all"><svg class="absolute inset-0 w-full h-full stroke-gray-200" stroke-width="1"><line x1="0" x2="100%" y1="0" y2="100%"></line><line x1="100" x2="0" y1="0" y2="100%"></line></svg></button></div>
+<!-- Editorial Specs Detail -->
+<div class="mt-4 pt-6 border-t border-gray-100 grid grid-cols-2 gap-4"><div class="border border-gray-200 rounded-xl p-4 bg-[#f8f9fb] flex flex-col justify-between space-y-4"><div class="h-3 w-24 bg-gray-800 rounded-full"></div><div class="space-y-1.5"><div class="h-2 w-4/5 bg-gray-300 rounded-full"></div><div class="h-2 w-3/5 bg-gray-300 rounded-full"></div></div><div class="h-2 w-28 bg-gray-300/80 rounded-full"></div></div><div class="border border-gray-200 rounded-xl p-4 bg-[#f8f9fb] flex flex-col justify-between space-y-4"><div class="h-3 w-24 bg-gray-800 rounded-full"></div><div class="space-y-1.5"><div class="h-2 w-5/6 bg-gray-300 rounded-full"></div><div class="h-2 w-1/2 bg-gray-300 rounded-full"></div></div><div class="h-2 w-20 bg-gray-300/80 rounded-full"></div></div></div>
+</section>
+<!-- RIGHT COLUMN: Purchase Panel -->
+<section aria-label="Detalles y compra" class="lg:col-span-5 lg:sticky lg:top-24 space-y-6 flex flex-col">
+<!-- Header Identity -->
+<div class="space-y-3 border-b border-gray-100 pb-6"><div class="flex items-center justify-between"><div class="h-4 w-20 bg-gray-200 rounded-full"></div><div class="h-3 w-16 bg-gray-200 rounded-full"></div></div><div class="space-y-2 pt-1"><div class="h-7 w-3/4 bg-gray-800 rounded-lg"></div><div class="h-3 w-1/2 bg-gray-300 rounded-full"></div></div><div class="pt-2 flex items-center justify-between"><div class="flex items-center space-x-2"><div class="h-5 w-16 bg-gray-800 rounded-md"></div><div class="h-3 w-12 bg-gray-300 rounded-md"></div></div><div class="flex items-center space-x-2"><div class="flex items-center space-x-1"><div class="w-3 h-3 bg-gray-400 rounded-full"></div><div class="w-3 h-3 bg-gray-400 rounded-full"></div><div class="w-3 h-3 bg-gray-400 rounded-full"></div><div class="w-3 h-3 bg-gray-400 rounded-full"></div><div class="w-3 h-3 bg-gray-300 rounded-full"></div></div><div class="h-2.5 w-16 bg-gray-300 rounded-full"></div></div></div></div>
+<!-- Shade Selector -->
+<div class="space-y-3">
+<div class="flex justify-between items-center text-xs font-mono uppercase"><div class="h-3 w-20 bg-gray-800 rounded-full"></div><div class="h-3 w-24 bg-gray-300 rounded-full"></div></div>
+<div class="flex items-center space-x-3" role="radiogroup">
+<button aria-checked="true" aria-label="01 dewy sheen" class="swatch-btn w-7 h-7 rounded-full border-2 border-primary ring-2 ring-primary ring-offset-2 bg-[#ecebe7] flex items-center justify-center transition-all" onclick="selectShade('01 // dewy sheen', this)" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+</button>
+<button aria-checked="false" aria-label="02 glazed pearl" class="swatch-btn w-7 h-7 rounded-full border border-gray-300 bg-[#dedad5] flex items-center justify-center hover:border-primary transition-all" onclick="selectShade('02 // glazed pearl', this)" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-transparent"></span>
+</button>
+<button aria-checked="false" aria-label="03 golden hour" class="swatch-btn w-7 h-7 rounded-full border border-gray-300 bg-[#c8beb3] flex items-center justify-center hover:border-primary transition-all" onclick="selectShade('03 // golden hour', this)" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-transparent"></span>
+</button>
+<button aria-label="04 sin stock" class="w-7 h-7 rounded-full border border-gray-300 bg-[#b8b0a7] relative opacity-40 cursor-not-allowed flex items-center justify-center" disabled="" title="Agotado" type="button">
+<span class="absolute inset-0 m-auto w-full h-[1px] bg-outline transform rotate-45"></span>
+</button>
+</div>
+</div>
+<!-- Quantity Selector & Add to Bag -->
+<div class="space-y-3"><div class="flex items-center space-x-3"><div class="flex items-center border border-gray-200 h-11 px-3 bg-white rounded-xl space-x-2"><div class="w-3 h-0.5 bg-gray-400 rounded-full"></div><div class="w-5 h-3 bg-gray-200 rounded"></div><div class="relative w-3 h-3 flex items-center justify-center"><div class="w-3 h-0.5 bg-gray-400 rounded-full absolute"></div><div class="h-3 w-0.5 bg-gray-400 rounded-full absolute"></div></div></div><button class="flex-1 h-11 bg-primary text-white text-xs font-mono uppercase tracking-wider hover:bg-primary-container active:opacity-90 transition-all flex items-center justify-center space-x-2 rounded-xl shadow-sm" type="button"><div class="h-3 w-32 bg-white/90 rounded-full mx-auto"></div></button></div><div class="grid grid-cols-2 gap-2 text-center"><button class="py-3 border border-gray-200 rounded-xl flex items-center justify-center"><div class="h-2.5 w-24 bg-gray-300 rounded-full"></div></button><button class="py-3 border border-gray-200 rounded-xl flex items-center justify-center"><div class="h-2.5 w-24 bg-gray-300 rounded-full"></div></button></div></div>
+<!-- Guarantees Card -->
+<div class="border border-gray-200 bg-[#f8f9fb] p-4 space-y-2 rounded-xl text-xs"><div class="flex items-center space-x-2"><span class="material-symbols-outlined text-[17px] text-secondary">local_shipping</span><div class="h-2.5 w-48 bg-gray-300 rounded-full"></div></div><div class="flex items-center space-x-2"><span class="material-symbols-outlined text-[17px] text-secondary">autorenew</span><div class="h-2.5 w-56 bg-gray-300 rounded-full"></div></div><div class="flex items-center space-x-2 pt-2 border-t border-gray-200/60"><span class="material-symbols-outlined text-[15px] text-secondary">verified</span><div class="h-2 w-64 bg-gray-300 rounded-full"></div></div></div>
+<!-- Expandable Product Accordions -->
+<div class="border-t border-gray-100 divide-y divide-gray-100 pt-1" id="accordion-group"><div class="py-3.5"><div class="w-full flex justify-between items-center py-1"><div class="h-3 w-32 bg-gray-800 rounded-full"></div><span class="material-symbols-outlined text-secondary text-[18px]">add</span></div></div><div class="py-3.5"><div class="w-full flex justify-between items-center py-1"><div class="h-3 w-28 bg-gray-800 rounded-full"></div><span class="material-symbols-outlined text-secondary text-[18px]">add</span></div></div><div class="py-3.5"><div class="w-full flex justify-between items-center py-1"><div class="h-3 w-24 bg-gray-800 rounded-full"></div><span class="material-symbols-outlined text-secondary text-[18px]">add</span></div></div><div class="py-3.5"><div class="w-full flex justify-between items-center py-1"><div class="h-3 w-36 bg-gray-800 rounded-full"></div><span class="material-symbols-outlined text-secondary text-[18px]">add</span></div></div></div>
+</section>
+</div>
+<!-- REVIEWS & SOCIAL PROOF -->
+<section aria-labelledby="reviews-heading" class="mt-16 pt-12 border-t border-gray-100">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8"><div><div class="h-2.5 w-32 bg-gray-300 rounded-full mb-2"></div><div class="h-6 w-44 bg-gray-800 rounded-lg"></div></div><div class="mt-4 md:mt-0"><div class="px-6 py-2.5 border border-primary rounded-xl flex items-center justify-center"><div class="h-2.5 w-24 bg-gray-800 rounded-full"></div></div></div></div>
+<!-- Score Breakdown Card -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 p-6 border border-gray-200 bg-[#f8f9fb] rounded-2xl mb-8"><div class="md:col-span-4 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-gray-200 pb-6 md:pb-0 md:pr-6 text-center"><div class="h-12 w-20 bg-gray-800 rounded-xl mb-2"></div><div class="flex items-center space-x-1 my-2"><div class="w-4 h-4 bg-gray-400 rounded-full"></div><div class="w-4 h-4 bg-gray-400 rounded-full"></div><div class="w-4 h-4 bg-gray-400 rounded-full"></div><div class="w-4 h-4 bg-gray-400 rounded-full"></div><div class="w-4 h-4 bg-gray-400 rounded-full"></div></div><div class="h-2.5 w-36 bg-gray-300 rounded-full"></div></div><div class="md:col-span-8 flex flex-col justify-center space-y-3"><div class="flex items-center space-x-3"><div class="w-10 h-2 bg-gray-300 rounded-full"></div><div class="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden"><div class="bg-primary h-full w-[85%]"></div></div><div class="w-6 h-2 bg-gray-300 rounded-full"></div></div><div class="flex items-center space-x-3"><div class="w-10 h-2 bg-gray-300 rounded-full"></div><div class="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden"><div class="bg-primary h-full w-[10%]"></div></div><div class="w-6 h-2 bg-gray-300 rounded-full"></div></div><div class="flex items-center space-x-3"><div class="w-10 h-2 bg-gray-300 rounded-full"></div><div class="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden"><div class="bg-primary h-full w-[3%]"></div></div><div class="w-6 h-2 bg-gray-300 rounded-full"></div></div><div class="flex items-center space-x-3"><div class="w-10 h-2 bg-gray-300 rounded-full"></div><div class="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden"><div class="bg-primary h-full w-[1%]"></div></div><div class="w-6 h-2 bg-gray-300 rounded-full"></div></div><div class="flex items-center space-x-3"><div class="w-10 h-2 bg-gray-300 rounded-full"></div><div class="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden"><div class="bg-primary h-full w-[1%]"></div></div><div class="w-6 h-2 bg-gray-300 rounded-full"></div></div></div></div>
+<!-- Testimonial Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6"><article class="p-5 border border-gray-200 bg-white flex flex-col justify-between space-y-4 rounded-xl shadow-xs"><div class="space-y-3"><div class="flex items-center justify-between"><div class="flex space-x-1"><div class="w-3 h-3 bg-gray-400 rounded-full"></div><div class="w-3 h-3 bg-gray-400 rounded-full"></div><div class="w-3 h-3 bg-gray-400 rounded-full"></div><div class="w-3 h-3 bg-gray-400 rounded-full"></div><div class="w-3 h-3 bg-gray-400 rounded-full"></div></div><div class="h-2 w-12 bg-gray-300 rounded-full"></div></div><div class="h-3.5 w-3/4 bg-gray-800 rounded-md"></div><div class="space-y-1.5 pt-1"><div class="h-2 w-full bg-gray-200 rounded-full"></div><div class="h-2 w-11/12 bg-gray-200 rounded-full"></div><div class="h-2 w-3/4 bg-gray-200 rounded-full"></div></div></div><div class="pt-3 border-t border-gray-100 flex items-center justify-between"><div class="h-2.5 w-16 bg-gray-800 rounded-full"></div><div class="h-2 w-20 bg-gray-300 rounded-full"></div></div></article><article class="p-5 border border-gray-200 bg-white flex flex-col justify-between space-y-4 rounded-xl shadow-xs"><div class="space-y-3"><div class="flex items-center justify-between"><div class="flex space-x-1"><div class="w-3 h-3 bg-gray-400 rounded-full"></div><div class="w-3 h-3 bg-gray-400 rounded-full"></div><div class="w-3 h-3 bg-gray-400 rounded-full"></div><div class="w-3 h-3 bg-gray-400 rounded-full"></div><div class="w-3 h-3 bg-gray-400 rounded-full"></div></div><div class="h-2 w-12 bg-gray-300 rounded-full"></div></div><div class="h-3.5 w-4/5 bg-gray-800 rounded-md"></div><div class="space-y-1.5 pt-1"><div class="h-2 w-full bg-gray-200 rounded-full"></div><div class="h-2 w-5/6 bg-gray-200 rounded-full"></div><div class="h-2 w-4/5 bg-gray-200 rounded-full"></div></div></div><div class="pt-3 border-t border-gray-100 flex items-center justify-between"><div class="h-2.5 w-16 bg-gray-800 rounded-full"></div><div class="h-2 w-20 bg-gray-300 rounded-full"></div></div></article><article class="p-5 border border-gray-200 bg-white flex flex-col justify-between space-y-4 rounded-xl shadow-xs"><div class="space-y-3"><div class="flex items-center justify-between"><div class="flex space-x-1"><div class="w-3 h-3 bg-gray-400 rounded-full"></div><div class="w-3 h-3 bg-gray-400 rounded-full"></div><div class="w-3 h-3 bg-gray-400 rounded-full"></div><div class="w-3 h-3 bg-gray-400 rounded-full"></div><div class="w-3 h-3 bg-gray-300 rounded-full"></div></div><div class="h-2 w-12 bg-gray-300 rounded-full"></div></div><div class="h-3.5 w-3/4 bg-gray-800 rounded-md"></div><div class="space-y-1.5 pt-1"><div class="h-2 w-full bg-gray-200 rounded-full"></div><div class="h-2 w-10/12 bg-gray-200 rounded-full"></div><div class="h-2 w-2/3 bg-gray-200 rounded-full"></div></div></div><div class="pt-3 border-t border-gray-100 flex items-center justify-between"><div class="h-2.5 w-16 bg-gray-800 rounded-full"></div><div class="h-2 w-20 bg-gray-300 rounded-full"></div></div></article></div>
+</section>
+<!-- RELATED PRODUCTS / COMPLETA TU RUTINA -->
+<section aria-labelledby="related-heading" class="mt-16 pt-12 border-t border-gray-100">
+<div class="flex items-center justify-between mb-8"><div><div class="h-2.5 w-28 bg-gray-300 rounded-full mb-2"></div><div class="h-6 w-40 bg-gray-800 rounded-lg"></div></div><div class="flex items-center space-x-2"><button aria-label="Anterior" class="w-8 h-8 rounded-lg border border-gray-200 flex items-center justify-center text-secondary hover:text-primary hover:border-primary transition-colors"><span class="material-symbols-outlined text-[18px]">chevron_left</span></button><button aria-label="Siguiente" class="w-8 h-8 rounded-lg border border-gray-200 flex items-center justify-center text-secondary hover:text-primary hover:border-primary transition-colors"><span class="material-symbols-outlined text-[18px]">chevron_right</span></button></div></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"><div class="flex flex-col space-y-3 group border border-gray-200/80 p-3.5 rounded-2xl bg-white"><div class="aspect-square bg-[#f5f6f8] rounded-xl relative flex items-center justify-center overflow-hidden border border-gray-100"><svg class="absolute inset-0 w-full h-full stroke-gray-200" stroke-width="1"><line x1="0" x2="100%" y1="0" y2="100%"></line><line x1="100" x2="0" y1="0" y2="100%"></line></svg></div><div class="space-y-2"><div class="flex justify-between items-baseline"><div class="h-3.5 w-28 bg-gray-800 rounded-md"></div><div class="h-3 w-8 bg-gray-800 rounded-full"></div></div><div class="h-2.5 w-36 bg-gray-300 rounded-full"></div></div><button class="w-full py-2.5 bg-primary text-white rounded-xl flex items-center justify-center"><div class="h-2.5 w-16 bg-white/90 rounded-full"></div></button></div><div class="flex flex-col space-y-3 group border border-gray-200/80 p-3.5 rounded-2xl bg-white"><div class="aspect-square bg-[#f5f6f8] rounded-xl relative flex items-center justify-center overflow-hidden border border-gray-100"><svg class="absolute inset-0 w-full h-full stroke-gray-200" stroke-width="1"><line x1="0" x2="100%" y1="0" y2="100%"></line><line x1="100" x2="0" y1="0" y2="100%"></line></svg></div><div class="space-y-2"><div class="flex justify-between items-baseline"><div class="h-3.5 w-24 bg-gray-800 rounded-md"></div><div class="h-3 w-8 bg-gray-800 rounded-full"></div></div><div class="h-2.5 w-40 bg-gray-300 rounded-full"></div></div><button class="w-full py-2.5 bg-primary text-white rounded-xl flex items-center justify-center"><div class="h-2.5 w-16 bg-white/90 rounded-full"></div></button></div><div class="flex flex-col space-y-3 group border border-gray-200/80 p-3.5 rounded-2xl bg-white"><div class="aspect-square bg-[#f5f6f8] rounded-xl relative flex items-center justify-center overflow-hidden border border-gray-100"><svg class="absolute inset-0 w-full h-full stroke-gray-200" stroke-width="1"><line x1="0" x2="100%" y1="0" y2="100%"></line><line x1="100" x2="0" y1="0" y2="100%"></line></svg></div><div class="space-y-2"><div class="flex justify-between items-baseline"><div class="h-3.5 w-32 bg-gray-800 rounded-md"></div><div class="h-3 w-8 bg-gray-800 rounded-full"></div></div><div class="h-2.5 w-36 bg-gray-300 rounded-full"></div></div><button class="w-full py-2.5 bg-primary text-white rounded-xl flex items-center justify-center"><div class="h-2.5 w-16 bg-white/90 rounded-full"></div></button></div><div class="flex flex-col space-y-3 group border border-gray-200/80 p-3.5 rounded-2xl bg-white"><div class="aspect-square bg-[#f5f6f8] rounded-xl relative flex items-center justify-center overflow-hidden border border-gray-100"><svg class="absolute inset-0 w-full h-full stroke-gray-200" stroke-width="1"><line x1="0" x2="100%" y1="0" y2="100%"></line><line x1="100" x2="0" y1="0" y2="100%"></line></svg></div><div class="space-y-2"><div class="flex justify-between items-baseline"><div class="h-3.5 w-32 bg-gray-800 rounded-md"></div><div class="h-3 w-8 bg-gray-800 rounded-full"></div></div><div class="h-2.5 w-36 bg-gray-300 rounded-full"></div></div><button class="w-full py-2.5 bg-primary text-white rounded-xl flex items-center justify-center"><div class="h-2.5 w-16 bg-white/90 rounded-full"></div></button></div></div>
+</section>
+</main>
+<!-- FOOTER (Harmonized with Home and Shop) -->
+<div class="w-full h-64 md:h-80 border-t border-b border-gray-200/80 bg-[#f8f9fb] relative flex items-center justify-center overflow-hidden"><svg class="absolute inset-0 w-full h-full stroke-gray-200 pointer-events-none" stroke-width="1"><line x1="0" x2="100%" y1="0" y2="100%"></line><line x1="100" x2="0" y1="0" y2="100%"></line></svg><div class="relative z-10 w-12 h-12 rounded-full border border-gray-200 bg-white/90 flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-secondary text-[20px]">image</span></div></div><footer class="w-full border-t border-gray-100 bg-white p-6 sm:p-8 lg:p-12 mt-16"><div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"><div class="lg:col-span-4 border border-gray-200 rounded-2xl p-6 bg-[#f8f9fb]"><div class="flex items-center gap-2 mb-3"><div class="h-3 w-28 bg-gray-800 rounded-full"></div></div><div class="h-2 w-48 bg-gray-300 rounded-full mb-5"></div><form class="flex items-center gap-2 mb-4" onsubmit="event.preventDefault()"><div class="relative flex-1"><input class="w-full h-10 px-3.5 bg-white border border-gray-300 rounded-full text-xs text-gray-800 focus:outline-none focus:border-gray-500 shadow-2xs" readonly="" type="text"></div><button class="h-10 px-5 bg-gray-800 hover:bg-gray-700 text-white rounded-full flex items-center justify-center" type="submit"><div class="h-2 w-8 bg-white/90 rounded-full"></div></button></form><div class="flex items-center gap-2 pt-1"><div class="h-2 w-20 bg-gray-300/80 rounded-full"></div><div class="h-2 w-12 bg-gray-300/50 rounded-full"></div></div></div><div class="lg:col-span-8 grid grid-cols-2 sm:grid-cols-4 gap-6 pt-2"><div class="space-y-3.5"><div class="h-3 w-16 bg-gray-800 rounded-full"></div><div class="space-y-2.5"><div class="h-2 w-20 bg-gray-300 rounded-full"></div><div class="h-2 w-16 bg-gray-300 rounded-full"></div><div class="h-2 w-24 bg-gray-300 rounded-full"></div><div class="h-2 w-14 bg-gray-300 rounded-full"></div><div class="h-2 w-20 bg-gray-300 rounded-full"></div></div></div><div class="space-y-3.5"><div class="h-3 w-20 bg-gray-800 rounded-full"></div><div class="space-y-2.5"><div class="h-2 w-24 bg-gray-300 rounded-full"></div><div class="h-2 w-20 bg-gray-300 rounded-full"></div><div class="h-2 w-16 bg-gray-300 rounded-full"></div><div class="h-2 w-22 bg-gray-300 rounded-full"></div></div></div><div class="space-y-3.5"><div class="h-3 w-14 bg-gray-800 rounded-full"></div><div class="space-y-2.5"><div class="h-2 w-16 bg-gray-300 rounded-full"></div><div class="h-2 w-20 bg-gray-300 rounded-full"></div><div class="h-2 w-24 bg-gray-300 rounded-full"></div><div class="h-2 w-12 bg-gray-300 rounded-full"></div></div></div><div class="space-y-3.5"><div class="h-3 w-22 bg-gray-800 rounded-full"></div><div class="space-y-2.5"><div class="h-2 w-20 bg-gray-300 rounded-full"></div><div class="h-2 w-24 bg-gray-300 rounded-full"></div><div class="h-2 w-16 bg-gray-300 rounded-full"></div><div class="h-2 w-14 bg-gray-300 rounded-full"></div></div></div></div></div><div class="mt-8 pt-5 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-400"><div class="h-2 w-32 bg-gray-300 rounded-full"></div><div class="flex items-center gap-4"><div class="h-2 w-16 bg-gray-300/80 rounded-full"></div><div class="w-1 h-1 rounded-full bg-gray-300"></div><div class="h-2 w-20 bg-gray-300/80 rounded-full"></div></div></div></footer>
+</div>
+
+
+
+
+
+</body></html>
