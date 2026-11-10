@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    background-color: black;
+    min-height: 100vh;
+}
+
+@media (min-width: 360px) {
+    section{
+        background-color: red;
+    }
+    
+}
