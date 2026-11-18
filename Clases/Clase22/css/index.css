@@ -1,0 +1,6 @@
+#pepe{
+    color: blue;
+    &:target{
+        color:red;
+    }
+}
