@@ -1,0 +1,79 @@
+body {
+    background-color: #f1f1f1;
+    height: 500vh;
+}
+
+section {
+    width: fit-content;
+    display:flex;
+    flex-direction: row;
+    gap: 24px;
+    padding: 24px;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 8px;
+
+    &.section-big{
+        min-height: 500px;
+    }
+
+}
+
+.block {
+    width: 200px;
+    height: 200px;
+    background: black;
+    border-radius: 8px;
+}
+
+
+.relative {
+    position: relative;
+    background-color: rgb(140, 140, 140);
+}
+.section-relative{
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    background-color: rgb(140, 140, 140);
+}
+
+.fixed{
+    position: fixed;
+    background-color: rgb(140, 140, 140);
+    top:0rem;
+    right: 0rem;
+}
+.sticky{
+    position: sticky;
+    background-color: rgb(140, 140, 140);
+    top:1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
