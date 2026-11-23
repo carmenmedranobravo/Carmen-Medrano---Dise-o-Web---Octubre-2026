@@ -87,18 +87,17 @@ div {
     animation-duration: 3s;
     animation-iteration-count: infinite;
 
+
+    &::before {
+        content: "Hola";
+        color: red;
+
+    }
+
+    &::after {
+        content: "Caracola";
+    }
 }
-
-div::before {
-    content: "Hola";
-    color: red;
-
-}
-
-div::after {
-    content: "Caracola";
-}
-
 
 
 /*  - primero se traslada hacia abajo
