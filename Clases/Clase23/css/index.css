@@ -1,16 +1,62 @@
 @keyframes move {
-    0% { /*es igual que from */
-        transform: translateX(0);
-    }
-    25% { /*es igual que from */
-        background-color: pink;
-    }
-    50% { /*es igual que from */
+    0% {
+        /*es igual que from */
+        transform: translateY(0) rotate(0);
         border-radius: 100%;
+        background-color: pink;
+
     }
 
-     100% { /*es igual que to */
-        transform: translateX(1000px);
+    25% {
+        transform: translateY(15rem) rotate(0);
+        border-radius: 100%;
+        background-color: pink;
+
+    }
+
+    50% {
+        transform: translateY(-15rem) rotate(0);
+        border-radius: 0%;
+        background-color: pink;
+
+
+    }
+
+    75% {
+        transform: translateY(0) rotate(90deg);
+        border-radius: 0%;
+        background-color: white;
+
+    }
+
+    100% {
+        transform: translateY(0) rotate(-90deg);
+        border-radius: 100%;
+        background-color: pink;
+
+    }
+}
+
+@keyframes mov3 {
+    0% {
+        background-color: white;
+    }
+
+    25% {
+        background-color: white;
+    }
+
+    50% {
+        background-color: white;
+    }
+
+    75% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: white;
+
     }
 }
 
@@ -20,10 +66,42 @@
     margin: 0;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+    animation-name: mov3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
 div {
     min-height: 100px;
     width: 100px;
     background-color: coral;
+
     animation-name: move;
-    animation-duration: 5s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
 }
+
+
+
+
+
+/*  - primero se traslada hacia abajo
+    - vuelve hacia arriba
+    - se convierte en un cuadrado
+    - se queda centrado en forma de cuadrado
+    - cambia el fondo
+    - vuelve al circulo
+*/
+
+
+
+
+
